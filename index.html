@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Trang chủ</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="Content/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="Content/theme.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/edoc.webflow.css" rel="stylesheet" type="text/css" />
+    <link href="Content/libs.bundle.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <link href="Content/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/images/webclip.png" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <header id="nav" class="sticky-nav">
+        <div class="nav-left">
+            <div class="logo-container">
+                <a href="index.html" aria-current="page" class="nav-logo-link w-inline-block w--current"><img
+                        src="Content/images/Logo.png" alt="Logo" class="nav-logo" /></a>
+            </div>
+            <div class="nav-menu">
+                <ul role="list" class="nav-grid w-list-unstyled">
+                    <li class="list-item">
+                        <a href="index.html" id="dashboard" aria-current="page" class="nav-link w--current">Quản lí</a>
+                    </li>
+                    <li>
+                        <a id="templates" href="#" class="nav-link">Bản mẫu</a>
+                    </li>
+                    <li>
+                        <a id="contacts" href="#" class="nav-link">Danh bạ</a>
+                    </li>
+                    <li>
+                        <a id="settings" href="#" class="nav-link">Cài đặt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-right">
+            <!-- <div class="nav-notification">
+                <img src="images/Mask-Group-653.png" loading="lazy" alt="Notification" />
+            </div>
+            <div class="nav-divider"></div> -->
+            <!-- <div class="nav-user">
+                <div class="user-avatar">
+                    <div class="first-word-name">K</div>
+                </div> -->
+                <!-- <img src="../images/Drop Default.svg" loading="lazy" alt="" class="drop-default"> -->
+                <!-- <div class="user-dropdown">
+                    <div class="user-drop-card">
+                        <div class="user-name-card">Nguyễn Trần Văn Khanh</div>
+                        <div class="user-email-card">nguyentranvankhanh123@gmail.com</div>
+                        <div class="card-divider add-margin"></div>
+                        <a href="../settings.html" class="option-button w-inline-block"><img
+                                src="../images/Account-Setting.svg" loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Cài đặt tài khoản</div>
+                        </a>
+                        <a href="../setting/plan-and-billing.html" class="option-button w-inline-block"><img
+                                src="../images/Plan.svg" loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Gói dịch vụ</div>
+                        </a>
+                        <a href="#" class="option-button w-inline-block"><img src="../images/Help.svg" loading="lazy"
+                                alt="" class="icon-option">
+                            <div class="option-text">Trợ giúp và hỗ trợ</div>
+                        </a>
+                        <div class="card-divider"></div>
+                        <a href="#" class="option-button remove-padding w-inline-block"><img src="../images/Log-Out.svg"
+                                loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Đăng xuất</div>
+                        </a>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+
+            <!-- User -->
+            <div class="navbar-user me-3">
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <!-- Toggle -->
+                    <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avatar-img rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20">
+                                <g id="avatar-user" transform="translate(-4550 11074)">
+                                    <circle id="Ellipse_26" data-name="Ellipse 26" cx="10" cy="10" r="10" transform="translate(4550 -11074)" fill="#505f79"/>
+                                    <text id="H" transform="translate(4555 -11071)" fill="#fff" font-size="13" font-family="HelveticaNeue, Helvetica Neue"><tspan x="0" y="12">H</tspan></text>
+                                </g>
+                            </svg>                                     
+                        </div>
+                    </a>
+
+                    <!-- Menu -->
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sidebarIcon">
+                        <a href="./sign-in.html" class="dropdown-item">Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- <div class="success-notification">
+        <div class="notification-block">
+            <div class="notification-text"><img src="images/Active-State.png" loading="lazy" alt=""
+                    class="notification-icon">
+                <div class="notification-content">Bạn đã gửi yêu cầu thành công</div>
+            </div><img src="images/Path-30115.png" loading="lazy" alt="Close Modal" class="close-notification">
+        </div>
+    </div> -->
+    <div class="container-fluid">
+        <div class="dashboard-container-body">
+            <div class="row">
+
+                <div class="col-sm-2">
+                    <div id="w-node-339fecbc6fd0-66c5cdc4" class="menu-left">
+                        <a href="upload-file.html" class="add-file-button w-button">
+                            <img src="Content/images/new-file-icon.png" class="margin-icon" alt="icon">
+                            Tạo tài liệu mới
+                        </a>
+                        <div class="state-dropdown" style="margin-top: 0px; margin-bottom: 0px; padding-left: 0px">
+                            <div id="flip" class="title-content" style="padding-left: 12px">
+                                <div class="text-and-icon">
+                                    <img src="Content/images/Path-30115_1.png" loading="lazy" alt="" class="file-icon" />
+                                    <div class="text-block-4">Tài liệu của tôi</div>
+                                </div>
+                                <img src="Content/images/Path-30116.png" loading="lazy" alt="" class="image-9" />
+                            </div>
+                            <div id="panel" class="state-link w-hidden" style="margin-left: 30px">
+                                <a href="#" class="link-state all-item w-inline-block" data-filter="*"><img src="Content/images/All.png"
+                                        loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Tất cả (05)</div>
+                                </a>
+                                <a href="#" class="link-state wait-item w-inline-block" data-filter=".wait-filter"><img
+                                        src="Content/images/Wait.png" loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Chờ ký (01)</div>
+                                </a>
+                                <a href="#" class="link-state done-item w-inline-block" data-filter=".done-filter"><img
+                                        src="Content/images/Done.png" loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Ký hoàn tất (01)</div>
+                                </a>
+                                <a href="#" class="link-state reject-item w-inline-block" data-filter=".reject-filter"><img
+                                        src="Content/images/Reject.png" loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Từ chối (01)</div>
+                                </a>
+                                <a href="#" class="link-state voided-item w-inline-block" data-filter=".voided-filter"><img
+                                        src="Content/images/Voided.png" loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Thu hồi (01)</div>
+                                </a>
+                                <a href="#" class="link-state draft-item w-inline-block" data-filter=".draft-filter"><img
+                                        src="Content/images/Draft.png" loading="lazy" alt="" class="image-10" />
+                                    <div class="all-text">Nháp (01)</div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="menu-link w-inline-block">
+                            <div class="item-menu-container">
+                                <img src="Content/images/Group-15087.png" loading="lazy" alt="" />
+                                <div class="menu-text-link">Đã xóa</div>
+                            </div>
+                        </a>
+                        <a href="#" class="menu-link w-inline-block">
+                            <div class="item-menu-container space-between">
+                                <div class="item-left">
+                                    <img src="Content/images/Group-15088.png" loading="lazy" alt="" />
+                                    <div class="menu-text-link">Thư mục</div>
+                                </div>
+                                <div class="item-right">
+                                    <img src="Content/images/Group-15086_1.png" loading="lazy" alt="function" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-10">
+                    <div class="work-area">
+                        <div class="heading-container">
+                            <div class="heading-text">Tất cả tài liệu</div>
+                            <div class="div-block-16"></div>
+                        </div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true"><i class="fas fa-chevron-left fa-xs"></i></span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true"><i class="fas fa-chevron-right fa-xs"></i></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+    
+                        <div class="table-responsive">
+                            <table class="table table-hover table-sm table-nowrap card-table">
+                                <colgroup>
+                                    <col width="240" />
+                                    <col width="550" />
+                                    <col width="106" />
+                                    <col width="132" />
+                                    <col width="72" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <a href="#" class="text-muted list-sort" data-sort="orders-order">
+                                                Người gửi
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a href="#" class="text-muted list-sort" data-sort="orders-product">
+                                                Tiêu đề
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a href="#" class="text-muted list-sort" data-sort="orders-date">
+                                                Cập nhật
+                                            </a>
+                                        </th>
+                                        <th>
+                                            <a href="#" class="text-muted list-sort" data-sort="orders-total">
+                                                Trạng thái
+                                            </a>
+                                        </th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list bg-white">
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-30">07/30/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state wait-another">Chờ người khác ký</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-30">07/30/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state reject">Từ chối</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-28">07/28/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state complete">Ký hoàn tất</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-27">07/27/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state draft">Nháp</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-27">07/27/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state voided">Thu hồi</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="orders-order">Điện máy xanh</td>
+                                        <td class="orders-product">
+                                            Hợp đồng dịch vụ mua bán thiết bị.docx.
+                                        </td>
+                                        <td class="orders-date">
+                                            <time datetime="2018-07-27">07/27/18</time>
+                                        </td>
+                                        <td class="orders-total">
+                                            <div class="state wait-another">Chờ ký</div>
+                                        </td>
+                                        <td class="text-end">
+                                            <!-- Dropdown -->
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-ellipses dropdown-toggle" role="button"
+                                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-end">
+                                                    <a href="#!" class="dropdown-item"> Action </a>
+                                                    <a href="#!" class="dropdown-item"> Another action </a>
+                                                    <a href="#!" class="dropdown-item">
+                                                        Something else here
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/040b683dcd.js" crossorigin="anonymous"></script>
+
+    <!-- Map JS -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Vendor JS -->
+    <script src="Scripts/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="Scripts/theme.bundle.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Thêm người nhận</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="Content/css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/webflow.css" rel="stylesheet" type="text/css" />
+    <link href="Content/css/edoc.webflow.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+    <link href="Content/images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/images/webclip.png" rel="apple-touch-icon" />
+</head>
+
+<body>
+    <header id="nav" class="sticky-nav">
+        <div class="close">
+            <a href="index.html" class="back-to-home w-inline-block"><img src="Content/images/Icons-Close-16px.svg"
+                    loading="lazy" alt="" /></a>
+        </div>
+        <div class="step-tab">
+            <div class="done---step">
+                <div class="dot-step">
+                    <img src="Content/images/Done-Step.png" loading="lazy" alt="" />
+                </div>
+                <div class="done-step">Tải lên</div>
+            </div>
+            <div class="spacing---step">
+                <img src="Content/images/Link-Step.png" loading="lazy" alt="" />
+            </div>
+            <div class="non-step">
+                <div class="dot-step">
+                    <img src="Content/images/Group-14876.svg" loading="lazy" alt="" />
+                </div>
+                <div class="next-step">Thêm người nhận</div>
+            </div>
+            <div class="spacing---step">
+                <img src="Content/images/Group-14878.svg" loading="lazy" alt="" />
+            </div>
+            <div class="non-step">
+                <div class="dot-step">
+                    <img src="Content/images/Group-14877.svg" loading="lazy" alt="" />
+                </div>
+                <div class="body-text-13 grey">Gán trường ký</div>
+            </div>
+            <div class="spacing---step">
+                <img src="Content/images/Group-14878.svg" loading="lazy" alt="" />
+            </div>
+            <div class="non-step">
+                <div class="dot-step">
+                    <img src="Content/images/Group-14877.svg" loading="lazy" alt="" />
+                </div>
+                <div class="body-text-13 grey">Xác nhận và hoàn tất</div>
+            </div>
+        </div>
+        <div class="nav-right">
+            <!-- <div class="nav-divider"></div>
+            <div class="nav-user">
+                <div class="user-avatar">
+                    <div class="first-word-name">K</div>
+                </div><img src="../images/Drop Default.svg" loading="lazy" alt="" class="drop-default"><img
+                    src="../images/Drop-Hover.svg" loading="lazy" alt="" class="drop-hover"><img
+                    src="../images/Drop-Clicked.svg" loading="lazy" alt="" class="drop-clicked">
+                <div class="user-dropdown">
+                    <div class="user-drop-card">
+                        <div class="user-name-card">Nguyễn Trần Văn Khanh</div>
+                        <div class="user-email-card">nguyentranvankhanh123@gmail.com</div>
+                        <div class="card-divider add-margin"></div>
+                        <a href="../settings.html" class="option-button w-inline-block"><img
+                                src="../images/Account-Setting.svg" loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Cài đặt tài khoản</div>
+                        </a>
+                        <a href="../setting/plan-and-billing.html" class="option-button w-inline-block"><img
+                                src="../images/Plan.svg" loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Gói dịch vụ</div>
+                        </a>
+                        <a href="#" class="option-button w-inline-block"><img src="../images/Help.svg" loading="lazy"
+                                alt="" class="icon-option">
+                            <div class="option-text">Trợ giúp và hỗ trợ</div>
+                        </a>
+                        <div class="card-divider"></div>
+                        <a href="#" class="option-button remove-padding w-inline-block"><img src="../images/Log-Out.svg"
+                                loading="lazy" alt="" class="icon-option">
+                            <div class="option-text">Đăng xuất</div>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <div class="add-receiver-body">
+        <div class="body-container">
+            <div class="heading-receiver">
+                <div class="heading-step">Thêm người nhận</div>
+            </div>
+            <div class="sender-container">
+                <div class="icon-sender">
+                    <img src="Content/images/Sender-Icon.png" loading="lazy" alt="" />
+                </div>
+                <div class="sender-text">
+                    <div class="title-sender">Người gửi</div>
+                    <div class="subtitle-sender">Nguyen Tran Van Khanh</div>
+                </div>
+            </div>
+            <div class="vertical-dashed-line">
+                <img src="Content/images/Dashed-Line.png" loading="lazy" alt="" />
+            </div>
+            <div class="sender-container add-margin">
+                <div class="icon-sender">
+                    <img src="Content/images/Receiver-Icon.png" loading="lazy" alt="" />
+                </div>
+                <div class="title-sender">Người nhận</div>
+            </div>
+            <div class="set-order-checkbox">
+                <div class="checkbox-form w-form">
+                    <label class="w-checkbox checkbox-field">
+                        <input type="checkbox" id="enable-ordering" name="checkbox" class="w-checkbox-input" disabled />
+                        <span class="checkbox-text w-form-label">
+                            Thiết lập thứ tự ký
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <form action="add-signature-field.html" class="add-receiver-area">
+                <div id="recipient-list">
+                    <div id="original-recipient-block" class="recipient">
+                        <div class="long-dashed-line">
+                            <img src="images/Line 130.png" loading="lazy" alt="" />
+                            <div class="order-rectangle">
+                                <input id="order-input" type="text" name="recipient[][order]"
+                                    class="order-text w-hidden">
+                            </div>
+                            <img src="images/Line 130.png" loading="lazy" alt="" />
+                        </div>
+                        <div class="add-receiver-container">
+                            <div class="info-receiver">
+                                <div class="info-card">
+                                    <div class="form-container">
+                                        <div class="form-block w-form">
+                                            <div class="name-container">
+                                                <label for="name" class="label-text">Tên người nhận</label>
+                                                <div class="name-field">
+                                                    <input id="name" type="text" class="text-field-3 w-input"
+                                                        name="recipient[][name]" pattern="^[\p{L}\s-]+$"
+                                                        placeholder="Nhập tên người nhận" required />
+                                                    <a href="#" class="eye-icon w-inline-block"><img
+                                                            src="Content/images/Contact-Icon.png" loading="lazy" alt=""
+                                                            class="eye-image" /></a>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <label for="email" class="label-text">Email</label>
+                                                <input id="email" type="email" class="text-field-2 w-input"
+                                                    name="recipient[][email]" placeholder="Nhập Email người nhận"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-container">
+                                        <div class="w-dropdown">
+                                            <div class="dropdown-toggle-4 w-dropdown-toggle">
+                                                <select class="dropdown-text" name="recipient[][action]" id="role-sign">
+                                                    <option value="sign-now">Ký tài liệu</option>
+                                                    <option value="receive-a-copy">Nhận bản sao</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delete-card">
+                            <a href="#" class="delete-button">
+                                <img class="delete-recipient-button" src="Content/images/Delete-Icon.png" loading="lazy"
+                                    alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-margin">
+                    <div class="add-button-container">
+                        <a href="#" id="add-recipient-button" class="add-person-button w-button">Thêm người nhận<img style="margin-left: 4px;" src="Content/images/add-recipient-icon.png" alt="" /></a>
+                        <div class="button-divider"></div>
+                        <a href="#" class="add-contact-button w-button">Thêm từ danh bạ</a>
+                    </div>
+                    <div class="add-receiver-button">
+                        <a href="upload-file.html" class="back-button w-button">Quay lại</a>
+                        <a href="add-signature-field.html" class="next-button w-button" type="submit">Tiếp tục</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="footer">
+        <div class="footer-container">
+            <div class="footer-text">
+                Powered by <a href="#" class="link-5">Ca2</a>
+            </div>
+            <div class="footer-link">
+                <a href="#" class="link-footer">Liên hệ</a>
+                <div class="footer-divider"></div>
+                <a href="#" class="link-footer">Điều khoản sử dụng</a>
+                <div class="footer-divider"></div>
+                <a href="#" class="link-footer">Chính sách bảo mật</a>
+                <div class="footer-divider"></div>
+                <a href="#" class="link-footer">Quyền sở hữu trí tuệ</a>
+            </div>
+            <div class="copyright-footer">
+                <img src="images/Icon-metro-copyright.png" loading="lazy" alt="" class="image-7" />
+                <div class="footer-text">
+                    Bản quyền thuộc về Công ty Cổ phần Công nghệ thẻ NACENCOMM
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <script src="Scripts/js/pages/create-signature-request.js"></script>
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+
+</html>
